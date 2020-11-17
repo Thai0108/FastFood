@@ -17,11 +17,10 @@ p {
     position: relative;
     width: 100%;
     /* vh bằng 1/100 chiều cao của khung nhìn */
-    min-height: 100vh;
+    min-height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../images/bg.jpg);
     background-size: cover;
 }
 
@@ -138,28 +137,31 @@ section {
     width: 100px;
     height: 200px;
     border-radius: 3%;
-    background-image: linear-gradient(rgb(247, 56, 49),rgb(248, 202, 104));
-    top: 200px;
+    background-image: linear-gradient(rgb(247, 56, 49), rgb(248, 202, 104));
+    top: 130px;
     position: fixed;
     bottom: auto;
     list-style-type: none;
     display: block;
 }
-.list-menu li{
+.list-menu li {
     margin-top: 5px;
 }
 
-.list-menu li a{
+.list-menu li a {
     color: #fff;
     text-decoration: none;
 }
-.list-menu li:hover{
+
+.list-menu li:hover {
     background-color: #fff;
     cursor: pointer;
 }
-.list-menu li:hover a{
+
+.list-menu li:hover a {
     color: #ff0517;
 }
+
 .title {
     width: 100%;
     display: flex;
@@ -171,7 +173,7 @@ section {
 .menu .content {
     display: flex;
     justify-content: center;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 40px;
 }
@@ -207,9 +209,11 @@ section {
     font-weight: 400;
     color: f111;
 }
+
 .menu .content .box .price {
     padding: 0px 0 15px;
 }
+
 .menu .content .box .price h3 {
     text-align: center;
     font-weight: 700;

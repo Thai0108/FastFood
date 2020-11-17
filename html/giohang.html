@@ -1,88 +1,240 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Gio Hang</title>
-	<link rel="stylesheet" href="giohang.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HLU Fast food</title>
+    <link rel="stylesheet" href="../Css/styles.css" />
+    <script type="text/javascript" src="../JS/Js.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-	<div>
-		<img id="background-1" src="images/anhnen2.jpg" alt="">
-		<div class="head">
-			<div class="menu">
-				<ul>
-					<li><a href="file:///C:/Users/Admin/Desktop/fastfood/ban_fastfood.html">Home</a></li>
-					<li>
-						<a href="#">Menu</a>
-							<ul id="sub-menu">
-								<li>
-									<a href="#">Rice</a>
-								</li>
-								<hr>
-								<li>
-									<a href="#">Chicken</a>
-								</li>
-								<hr>
-								<li>
-									<a href="#">Hamburger</a>
-								</li>
-								<hr>
-								<li>
-									<a href="#">Drink</a>
-								</li>
-							</ul>
-					</li>
-					<li>
-						<a href="#">Combo</a>
-						<ul id="sub-menu">
-								<li>
-									<a href="#">Combo 99k</a>
-								</li>
-								<hr>
-								<li>
-									<a href="#">Combo 79k</a>
-								</li>
-								<hr>
-								<li>
-									<a href="#">Combo 119k</a>
-								</li>
-							</ul>
-					</li>
-					<li><a href="#">Event</a></li>
-					
-				</ul>
-			</div>
-			<div class="text-shopping-car">
-				<p style="font-size: 120px;color: white;margin-left: 45%; margin-top: 200px;font-family: .VnArabia;font-weight: 700;">CART</p>
-			</div>
-		</div>
-		<div class="main">
-			
-		</div>
-		<div class="contact">
-			<img src="images/anhnen1.png" alt="">
-			<div class="open-hour">
-				<p style="color: white; font-weight: 600; font-size: 30px;margin-left: 30px;">OPENNING HOURS</p>
-				<p><span id="day">MONDAY</span> ......... <span id="hour">9:00-22:00</span></p>
-				<p><span id="day">TUESDAY</span> ........ <span id="hour">9:00-22:00</span></p>
-				<p><span id="day">WEDNESDAY</span> ...... <span id="hour">9:00-22:00</span></p>
-				<p><span id="day">THURSDAY</span> ....... <span id="hour">9:00-22:00</span></p>
-				<p><span id="day">FRIDAY</span> ......... <span id="hour">9:00-22:00</span></p>
-				<p><span id="day">SATURDAY</span> ....... <span id="hour">9:00-22:00</span></p>
-				<p><span id="day">SUNDAY</span> ......... <span id="hour-close">CLOSE</span></p>
-			</div>
-			<div class="contact-us">
-				<p style="color: white; font-size: 30px;font-weight: 600;">CONTACT US</p>
-				<p id="contact">Email: khoahocmaytinhk4@gmail.com</p>
-				<p id="contact">Hotline: 0962226352</p>
-			</div>
-			<div class="logo-end">
-				<img style="height: 160px; width: 250px;margin-left: 55%;margin-top: 15px;" src="images/logo.png" alt="">
-				<p style="font-family: 'Bauhaus 93';font-size: 70px;color: white;margin-top: -80px;margin-left: 67%;">HLU FASTFOOD</p>
-			</div>
-		</div>
-	</div>
+    <header>
+        <a href="#" class="logo">
+            <div>
+                <img src="../images/logo.png">
+            </div>
+            Food<span>.</span>
+        </a>
+        <div class="menuToggle" onclick="menuToggle();">
+
+        </div>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#expert">Expert</a></li>
+            <li><a href="ban_fastfood.html">Event</a></li>
+            <li><a href="giohang.html"><i class="material-icons" style="font-size:27px">shopping_cart</i></a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Always Choose Good</h2>
+            <p>We're dedicated to improving the way we prepare our quality food and the ingredients that go into it.</p>
+            <a href="#menu" class="btn">Our Menu</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout Us</h2>
+                <p>Lotteria is a fast-food restaurant chain belonging to Lotte Group - one of the five largest
+                    corporations in Korea. For 7 consecutive years, Lotteria was ranked No. 1 in "Brand Power", granted
+                    by the "Korea Management Association", and was selected as the No. 1 position in brand
+                    competitiveness with the title "Brand Stock" of the rating agency.During that time, Lotteria has
+                    been making constant efforts to provide customers with thoughtful, considerate and continuous
+                    researchs in order to develop a healthy culinary culture. Moreover, to ensure hygiene, food safety
+                    and environmental protection</p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="../images/images/img1.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="titleText">Our <span>M</span>enu</h2>
+            <p>We're transparent about our food; so when you ask, we tell.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../images/images/menu1.jpg">
+                </div>
+                <div class="text">
+                    <h3>Quarter Pounder®* with Cheese</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../images/images/menu2.jpg">
+                </div>
+                <div class="text">
+                    <h3>Teriyaki Burger Combo</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../images/images/menu3.jpg">
+                </div>
+                <div class="text">
+                    <h3>Special Spaghetti</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../images/images/menu4.jpg">
+                </div>
+                <div class="text">
+                    <h3>Small World Famous Fries®</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../images/images/menu5.jpg">
+                </div>
+                <div class="text">
+                    <h3>Strawberry Banana Smoothie</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../images/images/menu6.jpg">
+                </div>
+                <div class="text">
+                    <h3>Coffee</h3>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <a href="Menu/BurgerMenu.html" class="btn">View All</a>
+        </div>
+    </section>
+    <section class="expert" id="expert">
+        <div class="title">
+            <h2 class="titleText">Our Kitchen<span>E</span>xpert</h2>
+            <p></p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../images/images/expert1.jpg">
+                </div>
+                <div class="text">
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../images/images/expert2.jpg">
+                </div>
+                <div class="text">
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../images/images/expert3.jpg">
+                </div>
+                <div class="text">
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../images/images/expert4.jpg">
+                </div>
+                <div class="text">
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="title white">
+            <h2 class="titleText">They <span>S</span>aid About Us</h2>
+            <p></p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../images/images/testi1.jpg">
+                </div>
+                <div class="text">
+                    <p>
+                        Talking about the famous fast food brand, surely it is impossible not to mention McDonald's,
+                        right? 😄 With both experiences of eating at the place and ordering home, I recommend everyone
+                        to come to the place to eat as well. experience more sauces, especially honey mustard huhu super
+                        best 😍 And even when the chicken is called back, the chicken when you eat it at the store and
+                        buy it is different as goods advertising with real goods</p>
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../images/images/testi2.jpg">
+                </div>
+                <div class="text">
+                    <p>For the first time out after Tet, McDonald's 🍟
+                        The atmosphere here is always so busy, the food is also quite delicious, the honey mustard is
+                        quite strange and delicious, but the way of serving it is a bit inconsistent, there are places
+                        for guests to serve themselves but there are still people. the calf ball, the order staff spoke
+                        a bit, making first-time people like me a little overwhelmed 🙄 the price was similar to Lotte
+                        or a bit more, not too expensive as I thought.</p>
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="../images/images/testi3.jpg">
+                </div>
+                <div class="text">
+                    <p>
+                        This brand is too famous, I come on weekends and see quite a lot of customers, mostly tourists,
+                        foreigners, and children. I like the space above this restaurant with floors 1 and 2, sitting on
+                        the second floor with a view of Trang tien is also interesting.
+                        However, the food I see is also good but not very special, because I am not a fast food fan. The
+                        burger that was wrapped in a paper bag was also careful and hot.
+                        Probably convenient for going to the lake without knowing what to eat, but not very special</p>
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontact</h2>
+            <p></p>
+        </div>
+        <div class="contactFrom">
+            <h3>Send Mesage</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Name"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" placeholder="Email">
+            </div>
+        </div>
+    </section>
+    <div class="copyrightText">
+        <p>Bản quyền thuộc về <a href="#">Nhóm FastFood</a> Đại học Hạ Long</p>
+    </div>
 </body>
+
 </html>

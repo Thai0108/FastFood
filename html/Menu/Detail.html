@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HLU Fast food</title>
+    <link rel="stylesheet" href="../Menu/Css/styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" class="logo">
+            <div>
+                <img src="../Menu/images/logo.png">
+            </div>
+            Food<span>.</span>
+        </a>
+        <div class="menuToggle" onclick="menuToggle();">
+
+        </div>
+        <ul class="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./BurgerMenu.html">Menu</a></li>
+            <li><a href="ban_fastfood.html">Event</a></li>
+            <li><a href="#"><i class="material-icons" style="font-size:27px">shopping_cart</i></a></li>
+
+        </ul>
+    </header>
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="titleText"><span>B</span>urgers</h2>
+        </div>
+        <div style="display: flex; justify-content: center; align-content: center; padding-top: 50px;">
+                <div class="imgBx">
+                    <img src="images/burger/Big Star Burger.png">
+                </div>
+                <div>
+                    <div style="padding: 15px 0 20px;">
+                        <h3 style="font-size: 2em;">Big Star Burger</h3>
+                    </div>
+                    <div class="price">
+                        <h3 style="font-size: 2em; color: #ff0000;">25.92 <span>$</span></h3>
+                    </div>
+                    <hr/>
+                    <ul>
+                        <li>01 Big Star Burger</li>
+                        <li>01 Pepsi (M)</li>
+                        <li>01 Khoai Tây Chiên (French Fries) - (M)</li>
+                    </ul>
+                    <div style="display: flex; align-content: center;">
+                        <p style="margin-right: 10px;">Số lượng: </p>
+                        <a href="#"><i class="material-icons">add</i></a>
+                        <input type="text" placeholder="1" style="width: 50px; text-align: center;">
+                        <a href="#"><i class="material-icons">remove</i></a>
+                    </div>
+                    <div class="title" style="padding-top: 20px;">
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <div class="copyrightText">
+        <p>Bản quyền thuộc về <a href="#">Nhóm FastFood</a> Đại học Hạ Long</p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function menuToggle() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+
+            menuToggle.classList.toggle("active");
+            navigation.classList.toggle("active");
+
+        }
+        function menuItem1() {
+            const menuItem = document.querySelector('.menuItem');
+            menuItem.classList.toggle("active");
+        }
+        function menuItem2() {
+            const menuItem = document.querySelector('.menuItem');
+            menuItem.classList.toggle("active");
+        }
+        function menuItem3() {
+            const menuItem = document.querySelector('menuItem');
+            menuItem.classList.toggle("active");
+        }
+        function menuItem4() {
+            const menuItem = document.querySelector('.menuItem');
+            menuItem.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
