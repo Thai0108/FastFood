@@ -153,7 +153,6 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 .menu .content{
     display: flex;

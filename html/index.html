@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HLU  Fast food</title>
     <link rel="stylesheet" href="../Css/styles.css" />
+    <script type="text/javascript" src="../JS/Js.js"></script>
 </head>
 
 <body>
@@ -21,11 +22,10 @@
         <ul class="navigation">
             <li><a href="#banner">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
+            <li><a href="./Menu/RiceMenu.html">Menu</a></li>
             <li><a href="#expert">Expert</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
-
         </ul>
     </header>
     <section class="banner" id="banner">
@@ -71,7 +71,7 @@
         <div class="content">
             <div class="box">
                 <div class="imgBx">
-                    <img src="../images//images/menu1.jpg">
+                    <img src="../images/images/menu1.jpg">
                 </div>
                 <div class="text">
                     <h3>Special Salads</h3>
@@ -79,7 +79,7 @@
             </div>
             <div class="box">
                 <div class="imgBx">
-                    <img src="../images//images/menu2.jpg">
+                    <img src="../images/images/menu2.jpg">
                 </div>
                 <div class="text">
                     <h3>Special Soup</h3>
@@ -87,7 +87,7 @@
             </div>
             <div class="box">
                 <div class="imgBx">
-                    <img src="../images//images/menu3.jpg">
+                    <img src="../images/images/menu3.jpg">
                 </div>
                 <div class="text">
                     <h3>Special Pasta</h3>
@@ -96,7 +96,7 @@
             
             <div class="box">
                 <div class="imgBx">
-                    <img src="../images//images/menu4.jpg">
+                    <img src="../images/images/menu4.jpg">
                 </div>
                 <div class="text">
                     <h3>Special Salads</h3>
@@ -104,7 +104,7 @@
             </div>
             <div class="box">
                 <div class="imgBx">
-                    <img src="../images//images/menu5.jpg">
+                    <img src="../images/images/menu5.jpg">
                 </div>
                 <div class="text">
                     <h3>Special Soup</h3>
@@ -112,7 +112,7 @@
             </div>
             <div class="box">
                 <div class="imgBx">
-                    <img src="../images//images/menu6.jpg">
+                    <img src="../images/images/menu6.jpg">
                 </div>
                 <div class="text">
                     <h3>Special Pasta</h3>
@@ -131,7 +131,7 @@
         <div class="content">
             <div class="box">
                 <div class="imgBx">
-                    <img src="../images//images/expert1.jpg">
+                    <img src="../images/images/expert1.jpg">
                 </div>
                 <div class="text">
                     <h3>Someone Famous</h3>
@@ -139,7 +139,7 @@
             </div>
             <div class="box">
                 <div class="imgBx">
-                    <img src="../images//images/expert2.jpg">
+                    <img src="../images/images/expert2.jpg">
                 </div>
                 <div class="text">
                     <h3>Someone Famous</h3>
@@ -147,7 +147,7 @@
             </div>
             <div class="box">
                 <div class="imgBx">
-                    <img src="../images//images/expert3.jpg">
+                    <img src="../images/images/expert3.jpg">
                 </div>
                 <div class="text">
                     <h3>Someone Famous</h3>
@@ -155,7 +155,7 @@
             </div>
             <div class="box">
                 <div class="imgBx">
-                    <img src="../images//images/expert4.jpg">
+                    <img src="../images/images/expert4.jpg">
                 </div>
                 <div class="text">
                     <h3>Someone Famous</h3>
@@ -236,19 +236,6 @@
     <div class="copyrightText">
         <p>Bản quyền thuộc về <a href="#">Nhóm FastFood</a> Đại học Hạ Long</p>
     </div>
-    <script type="text/javascript">
-        window.addEventListener('scroll', function () {
-            const header = document.querySelector('header');
-            header.classList.toggle("sticky", window.scrollY > 0);
-        });
-
-        function menuToggle(){
-            const menuToggle = document.querySelector('.menuToggle');
-            const navigation = document.querySelector('.navigation');
-            menuToggle.classList.toggle("active");
-            navigation.classList.toggle("active");
-        }
-    </script>
 </body>
 
 </html>
