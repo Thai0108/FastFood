@@ -73,7 +73,7 @@ header.sticky{
     background: #fff;
     /*padding: left right top bottom */
     padding: 10px 100px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 header.sticky .logo{
     color:#111;
