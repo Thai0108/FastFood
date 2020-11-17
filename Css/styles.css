@@ -48,6 +48,7 @@ p{
 }
 .btn:hover{
     letter-spacing: 6px;
+    border:1px solid #fff;
 }
 header{
     position: fixed;
@@ -60,6 +61,13 @@ header{
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
+}
+header .logo div{
+    float: left;
+}
+header .logo img{
+    width: 100px;
+    height: 60x;
 }
 header.sticky{
     background: #fff;
@@ -78,12 +86,14 @@ header .logo{
 }
 header .logo span{
     color:#ff0157;
+    font-size: 0.8em;
 }
 header .navigation{
     position: relative;
     display: flex;
-
+    
 }
+
 header .navigation li{
     list-style: none;
     margin-left: 30px;
@@ -99,6 +109,7 @@ header.sticky .navigation li a{
 header .navigation li a:hover{
     color: #ff0157;
 }
+
 section{
     padding:100px;
 }
